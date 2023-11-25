@@ -1,0 +1,31 @@
+geany -> Text Editor
+pipewire -> Audio
+blueman-manager -> Bluetooth
+swaybg -> Background
+swaylock -> Lockscreen
+nm-connection-editor -> Network Manager
+swaync -> Notification Center
+alacritty -> Terminal
+tty-clock -> Terminal Clock
+thunar -> File Manager
+wofi -> Menu Prompt
+firefox -> Web Browser
+discord -> Communication
+btop++ -> Task Manager
+neofetch -> Linux thing
+blender -> 3D Rendering
+amfora -> Gemini browsing
+grim & slurp -> Screenshots
+obs -> Screen recording
+mpd & mpc & ncmpcpp -> Music player
+okular -> Open PDFs
+
+Disable login manager:
+systemctl set-default multi-user.target
+
+User crontab
+@reboot mpd & sleep 5 && (mpc random on)
+
+Sudo & super user crontab
+@reboot chmod o+w /sys/class/backlight/amdgpu_bl1/brightness
+@reboot echo "balance_power" | tee /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference
